@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_05_21_210120) do
+ActiveRecord::Schema.define(version: 2018_05_22_195953) do
 
   create_table "admins", force: :cascade do |t|
     t.string "Username"
@@ -36,11 +36,25 @@ ActiveRecord::Schema.define(version: 2018_05_21_210120) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "student_cohorts", force: :cascade do |t|
+    t.integer "Student_ID"
+    t.integer "Cohort_ID"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "students", force: :cascade do |t|
     t.string "First_Name"
     t.string "Last_Name"
     t.integer "Age"
     t.string "Education"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "teacher_cohorts", force: :cascade do |t|
+    t.integer "Teacher_ID"
+    t.integer "Cohort_ID"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -51,6 +65,13 @@ ActiveRecord::Schema.define(version: 2018_05_21_210120) do
     t.integer "Age"
     t.string "Education"
     t.string "Salary"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "teachers_cohorts", force: :cascade do |t|
+    t.integer "Teacher_ID"
+    t.integer "Student_ID"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
