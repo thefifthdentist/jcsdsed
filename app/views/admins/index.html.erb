@@ -23,17 +23,14 @@
         <td><%= link_to 'Show', admin, class: 'btn btn-primary btn-xs' %></td>
         <td><%= link_to 'Edit', edit_admin_path(admin), class: 'btn btn-info btn-xs' %></td>
         <td><%= link_to 'Destroy', admin, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger btn-xs' %></td>
-        <!-- <td><%= link_to 'Show', admin %></td>
-        <td><%= link_to 'Edit', edit_admin_path(admin) %></td>
-        <td><%= link_to 'Destroy', admin, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
+
       </tr>
     <% end %>
   </tbody>
 </table>
     </div>
       <div class="col-xs-9">
-        <!-- <%= yield %> -->
-        TEST
+<%= link_to 'New Admin', new_admin_path %>
       </div>
     </div>
   </div>
@@ -41,5 +38,3 @@
 </body>
 
 <br>
-
-<%= link_to 'New Admin', new_admin_path %>
