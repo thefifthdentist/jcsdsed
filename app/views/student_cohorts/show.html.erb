@@ -1,14 +1,14 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Student id:</strong>
+  <strong>STUDENT ID:</strong>
   <%= @student_cohort.Student_ID %>
 </p>
 
 <p>
-  <strong>Cohort id:</strong>
+  <strong>COHORT ID:</strong>
   <%= @student_cohort.Cohort_ID %>
 </p>
 
-<%= link_to 'Edit', edit_student_cohort_path(@student_cohort) %> |
-<%= link_to 'Back', student_cohorts_path %>
+<%= link_to 'Edit', edit_student_cohort_path(@student_cohort), class: 'btn btn-success btn-xs'   %> |
+<%= link_to 'Back', student_cohorts_path, class: 'btn btn-info btn-xs'   %>

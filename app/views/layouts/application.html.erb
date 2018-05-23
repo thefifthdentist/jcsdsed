@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Jcsdsed</title>
+    <title>JCSDSED</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -9,15 +9,19 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body style="background-color: #f5f5ef;">
 
-    <div id="main-container" class="container" style="background-color: #d69f7e;">
+    <div id="main-container" class="container">
       <div class="row">
         <div class="col-xs-3">
-          <h3>Jacques Cousteau School of Deep Sea Exploratory Diving</h3>
+          <h3>Jacques Cousteau's School of Deep Sea Exploratory Diving</h3>
         </div>
         <div class="col-xs-9">
+          <br />
+          <br />
+
           <%= yield %>
+          <br />
         </div>
       </div>
     </div>

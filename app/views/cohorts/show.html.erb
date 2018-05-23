@@ -1,29 +1,29 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
+  <strong>NAME:</strong>
   <%= @cohort.Name %>
 </p>
 
 <p>
-  <strong>Start date:</strong>
+  <strong>START DATE:</strong>
   <%= @cohort.Start_Date %>
 </p>
 
 <p>
-  <strong>End date:</strong>
+  <strong>END DATE:</strong>
   <%= @cohort.End_Date %>
 </p>
 
 <p>
-  <strong>Course id:</strong>
+  <strong>COURSE ID:</strong>
   <%= @cohort.Course_ID %>
 </p>
 
 <p>
-  <strong>Student id:</strong>
+  <strong>STUDENT ID:</strong>
   <%= @cohort.Student_ID %>
 </p>
 
-<%= link_to 'Edit', edit_cohort_path(@cohort) %> |
-<%= link_to 'Back', cohorts_path %>
+<%= link_to 'Edit', edit_cohort_path(@cohort), class: 'btn btn-success btn-xs'   %> |
+<%= link_to 'Back', cohorts_path, class: 'btn btn-info btn-xs'   %>

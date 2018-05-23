@@ -1,14 +1,14 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Username:</strong>
+  <strong>USERNAME:</strong>
   <%= @admin.Username %>
 </p>
 
 <p>
-  <strong>Password:</strong>
+  <strong>PASSWORD:</strong>
   <%= @admin.Password %>
 </p>
 
-<%= link_to 'Edit', edit_admin_path(@admin) %> |
-<%= link_to 'Back', admins_path %>
+<%= link_to 'Edit', edit_admin_path(@admin) , class: 'btn btn-warning btn-xs'  %> |
+<%= link_to 'Back', admins_path , class: 'btn btn-info btn-xs'  %>

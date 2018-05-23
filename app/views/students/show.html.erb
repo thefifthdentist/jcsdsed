@@ -1,24 +1,24 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>First name:</strong>
+  <strong>FIRST NAME:</strong>
   <%= @student.First_Name %>
 </p>
 
 <p>
-  <strong>Last name:</strong>
+  <strong>LAST NAME:</strong>
   <%= @student.Last_Name %>
 </p>
 
 <p>
-  <strong>Age:</strong>
+  <strong>AGE:</strong>
   <%= @student.Age %>
 </p>
 
 <p>
-  <strong>Education:</strong>
+  <strong>EDUCATION:</strong>
   <%= @student.Education %>
 </p>
 
-<%= link_to 'Edit', edit_student_path(@student) %> |
-<%= link_to 'Back', students_path %>
+<%= link_to 'Edit', edit_student_path(@student), class: 'btn btn-success btn-xs'   %> |
+<%= link_to 'Back', students_path, class: 'btn btn-info btn-xs'  %>
