@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root to: "dashboard#index"
   resources :student_cohorts
   resources :teacher_cohorts
   resources :teachers_cohorts
